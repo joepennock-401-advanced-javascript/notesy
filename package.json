@@ -1,0 +1,28 @@
+{
+  "name": "notesy",
+  "version": "0.0.1",
+  "description": "Simple CLI note taking app built in Node.js",
+  "main": "notes.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joepennock-401-advanced-javascript/notesy.git"
+  },
+  "keywords": [
+    "notes",
+    "node",
+    "javascript",
+    "cli"
+  ],
+  "author": "Joe Pennock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joepennock-401-advanced-javascript/notesy/issues"
+  },
+  "homepage": "https://github.com/joepennock-401-advanced-javascript/notesy#readme"
+}
