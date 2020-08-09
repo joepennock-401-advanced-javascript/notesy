@@ -2,7 +2,7 @@
   "name": "notesy",
   "version": "0.0.1",
   "description": "Simple CLI note taking app built in Node.js",
-  "main": "notes.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
