@@ -10,7 +10,7 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
+- [submission PR](https://github.com/joepennock-401-advanced-javascript/notesy/pull/1)
 - [ci/cd](https://github.com/joepennock-401-advanced-javascript/notesy/actions) (GitHub Actions)
 
 ### Setup
