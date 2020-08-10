@@ -2,7 +2,7 @@
   "name": "notesy",
   "version": "0.0.1",
   "description": "Simple CLI note taking app built in Node.js",
-  "main": "notes.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/joepennock-401-advanced-javascript/notesy/issues"
   },
-  "homepage": "https://github.com/joepennock-401-advanced-javascript/notesy#readme"
+  "homepage": "https://github.com/joepennock-401-advanced-javascript/notesy#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }
