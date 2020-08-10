@@ -1,37 +1,37 @@
-# LAB - Class xx
+# LAB - Class 01
 
 ## Project: Notesy
 
+- A simple CLI note taking app made in Node.js.
+
 ### Author: Joe Pennock
+
+- Here's my [Github](https://github.com/penjoe)
 
 ### Links and Resources
 
 - [submission PR](http://xyz.com)
-- [ci/cd](http://xyz.com) (GitHub Actions)
-- [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](http://xyz.com) (when applicable)
+- [ci/cd](https://github.com/joepennock-401-advanced-javascript/notesy/actions) (GitHub Actions)
 
 ### Setup
 
+- Have `node` installed on your local machine.
+- In terminal, run this command `npm i minimist` to get a CLI input parsing library used in this application.
+
 #### `.env` requirements (where applicable)
 
-i.e.
-
-- `PORT` - Port Number
-- `MONGODB_URI` - URL to the running mongo instance/db
+Currently no required .env variables.
 
 #### How to initialize/run your application (where applicable)
 
-- e.g. `npm start`
+- Nothing to be initialized at this time.
 
 #### How to use your library (where applicable)
 
 #### Tests
 
-- How do you run tests?
-- Any tests of note?
-- Describe any tests that you did not complete, skipped, etc
+- No tests required yet for this lab.
 
 #### UML
 
-Link to an image of the UML for your application and response to events
+![project UML](assets/notesy-uml.png)
