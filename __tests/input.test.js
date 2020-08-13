@@ -14,7 +14,6 @@ const minimist = require('minimist');
 
 minimist.mockImplementation( () => {
   return {
-    // Filler params. Not yet sure what my mock data should be.
     _: [],
     // action: 'payload'
     a: 'test',
@@ -34,6 +33,18 @@ describe('Test suite for the Input module from lib/input.js.', () => {
     let options = new Input();
     console.log(options);
     expect(options.payload).toEqual('test');
+  });
+
+  it('Given the user providing valid input, Input.validate() should return true.', () => {
+    let options = new Input();
+    expect(options.validate(options)).toBe(true);
+  });
+
+  it('Given the user provides missing or invalid input, Input.validate() will return false.', () => {
+    let options = new Input();
+    options.action = null;
+    console.log(options);
+    expect(options.validate(options)).toBe(false);
   });
 
 });
