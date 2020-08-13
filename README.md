@@ -1,6 +1,7 @@
-# LAB - Class 01
+# LAB - Class 02
 
 ## Project: Notesy
+
 
 - A simple CLI note taking app made in Node.js.
 
@@ -17,6 +18,7 @@
 
 - Have `node` installed on your local machine.
 - In terminal, run this command `npm i minimist` to get a CLI input parsing library used in this application.
+- Run the command `npm i jest` to install Jest, a testing library this application will be using for running all of the required tests.
 
 #### `.env` requirements (where applicable)
 
