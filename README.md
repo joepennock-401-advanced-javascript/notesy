@@ -24,7 +24,15 @@ Currently no required .env variables.
 
 #### How to initialize/run your application (where applicable)
 
-- Nothing to be initialized at this time.
+- Open `Terminal` on your computer, or a similar CLI interface such as `WSL`.
+- Start with the command `notes` followed by these commands:
+  - `a` or `--add` to add a new note to Notesy.
+- Following the desired command, add the body of the note contained within quotations, or " ".
+- The command should look something like this:
+```
+notes --add "This is a new note I'm adding"
+```
+
 
 #### How to use your library (where applicable)
 
