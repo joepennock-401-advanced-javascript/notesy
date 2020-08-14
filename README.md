@@ -1,6 +1,7 @@
-# LAB - Class 01
+# LAB - Class 02
 
 ## Project: Notesy
+
 
 - A simple CLI note taking app made in Node.js.
 
@@ -10,13 +11,14 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/joepennock-401-advanced-javascript/notesy/pull/2)
+- [submission PR](https://github.com/joepennock-401-advanced-javascript/notesy/pull/3)
 - [ci/cd](https://github.com/joepennock-401-advanced-javascript/notesy/actions) (GitHub Actions)
 
 ### Setup
 
 - Have `node` installed on your local machine.
 - In terminal, run this command `npm i minimist` to get a CLI input parsing library used in this application.
+- Run the command `npm i jest` to install Jest, a testing library this application will be using for running all of the required tests.
 
 #### `.env` requirements (where applicable)
 
@@ -38,7 +40,15 @@ notes --add "This is a new note I'm adding"
 
 #### Tests
 
-- No tests required yet for this lab.
+- << **All testing will require mock data** >>
+- Testing for `input.js` are checking for a truthy value if there is valid input provided and a falsey value is there is invalid user input provided:
+  - use `jest.mock('minimist)`
+  - provide mock user input data
+  - run the command `npm test input.test.js`
+- Testing for `notes.js` are checking to see whether or not `console.log()` is being caled within the `Note` class. 
+  - will require the use of a spy to check if `console.log()` has been called
+  - provide mock data
+  - run the command `npm test notes.test.js`
 
 #### UML
 

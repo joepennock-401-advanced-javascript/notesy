@@ -15,7 +15,7 @@ const input = new Input;
 if ( input.validate(input) === true){
   const addNote = new Note(input);
   addNote.execute(input);
-  addNote.add(input);
+  addNote.addNote(input);
 
 } else { 
   console.log('Error, please input a valid command')
