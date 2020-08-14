@@ -14,8 +14,8 @@ minimist.mockImplementation( () => {
   return {
     _: [],
     a: 'test',
-  }
-})
+  };
+});
 
 const Note = require('../lib/notes');
 
@@ -30,9 +30,10 @@ describe('Test suite for Note module from lib/notes.js.', () => {
 
   it('Verify input is successfully being recieved from lib/notes.js module.', () => {
     const options = new Note();
+    expect(options.action).toEqual('a');
   });
 
-    it('Ensure console.log() is not being called with invalid user input', () => {
+  it('Ensure console.log() is not being called with invalid user input', () => {
     const options = new Note();
     options.action = null;
     options.addNote();

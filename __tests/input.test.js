@@ -16,7 +16,6 @@ const minimist = require('minimist');
 minimist.mockImplementation( () => {
   return {
     _: [],
-    // action: 'payload'
     a: 'test',
   };
 });
@@ -32,7 +31,6 @@ describe('Test suite for the Input module from lib/input.js.', () => {
 
   it('Verify that input is successfully being recieved from input.js module.', () => {
     let options = new Input();
-    console.log(options);
     expect(options.payload).toEqual('test');
   });
 
