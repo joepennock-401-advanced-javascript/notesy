@@ -2,10 +2,11 @@
 
 /* 
 TODOs:
-1. Write tests that will pass when user is providing valid input
+1. Use jest.mock to provide mock input fot testing.
+2. Write tests that will pass when user is providing valid input
   a. validate() returns true
   b. new instance of Input has both action and a payload
-2. Write tests that will pass when user provides invalid input
+3. Write tests that will pass when user provides invalid input
   a. validate() returns false
 */
 

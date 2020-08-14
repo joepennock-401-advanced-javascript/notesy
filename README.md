@@ -40,7 +40,15 @@ notes --add "This is a new note I'm adding"
 
 #### Tests
 
-- No tests required yet for this lab.
+- << **All testing will require mock data** >>
+- Testing for `input.js` are checking for a truthy value if there is valid input provided and a falsey value is there is invalid user input provided:
+  - use `jest.mock('minimist)`
+  - provide mock user input data
+  - run the command `npm test input.test.js`
+- Testing for `notes.js` are checking to see whether or not `console.log()` is being caled within the `Note` class. 
+  - will require the use of a spy to check if `console.log()` has been called
+  - provide mock data
+  - run the command `npm test notes.test.js`
 
 #### UML
 

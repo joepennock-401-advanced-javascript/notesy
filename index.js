@@ -12,12 +12,10 @@ const Note = require('./lib/notes');
 
 const input = new Input;
 
-console.log(input.validate());
-
 if ( input.validate(input) === true){
   const addNote = new Note(input);
   addNote.execute(input);
-  addNote.add(input);
+  addNote.addNote(input);
 
 } else { 
   console.log('Error, please input a valid command')
