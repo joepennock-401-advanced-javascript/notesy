@@ -21,7 +21,7 @@ const Note = require('./lib/notes');
 const input = new Input();
 
 /** Conditional running the execute() method of the Note class if usre input has passed validation */
-if ( input.validate() === true){
+if ( input.validate()){
   const addNote = new Note(input);
   addNote.execute();
 } else { 
