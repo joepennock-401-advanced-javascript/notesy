@@ -21,9 +21,11 @@ const Note = require('./lib/notes');
 const input = new Input();
 
 /** Conditional running the execute() method of the Note class if usre input has passed validation */
-if ( input.validate()){
+if ( input.validate() === true ){
   const addNote = new Note(input);
-  addNote.execute();
+  addNote.execute()
+  console.log('note', addNote);
 } else { 
   console.log('Error, please input a valid command');
+  mongoose.disconnect();
 };
