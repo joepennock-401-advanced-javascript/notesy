@@ -1,10 +1,15 @@
 'use strict'
 
 /*
+***** OLD *****
 TODOs:
 1. entry point of app
 2. import from lib/input.js and lib/notes.js
 3. pass user input from lib/input.js to lib/notes.js
+***** NEW *****
+1. Clean up code
+2. Add appropriate documentation
+3. Try and check if code is DRY
 */
 
 /** Connection to MongoDB */
