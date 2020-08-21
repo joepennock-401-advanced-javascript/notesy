@@ -1,4 +1,4 @@
-# LAB - Class 03
+# LAB - Class 04
 
 ## Project: Notesy
 
@@ -63,8 +63,13 @@ IMPIRTANT: With jest, make sure to change the scripts in your package.json file:
 ```
 This will make sure node knows to run jest when you run a test command.
 
+`supergoose` - a mongoose testing library that simputates connection to a Mongo DB to allow testing real code without actually adding/deleting data from a working database.
 
-
+To run, simply require the library in the test file:
+```
+require('@code-fellows/supergoose');
+```
+Supergoose will handle the connection to mongoose and all the rest. Then just run tests as normal.
 
 #### Tests
 
@@ -81,3 +86,4 @@ This will make sure node knows to run jest when you run a test command.
 #### UML
 
 ![project UML](assets/notesy-uml.png)
+ 
