@@ -85,5 +85,8 @@ Supergoose will handle the connection to mongoose and all the rest. Then just ru
 
 #### UML
 
+Initial project UML:
 ![project UML](assets/notesy-uml.png)
+Workflow of Notesy app:
+![notesy workflow](assets/notesy-workflow.jpeg)
  
