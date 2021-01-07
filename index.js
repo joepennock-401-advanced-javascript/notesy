@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict'
 
 /*
@@ -30,9 +31,12 @@ if ( input.validate() ) {
   const addNote = new Note(input);
   addNote.execute()
   .then( () => {
-    mongoose.disconnect();
+    mongoose.disconnect()
   });
 } else { 
   console.log('Error, please input a valid command');
   mongoose.disconnect();
 };
+
+console.log('test input', input);
+console.log(new Note(input));

@@ -6,6 +6,9 @@
   "directories": {
     "lib": "lib"
   },
+  "bin": {
+    "notes": "index.js"
+  },
   "scripts": {
     "test": "jest --verbose --coverage",
     "watch": "jest --watchAll --verbose --coverage"

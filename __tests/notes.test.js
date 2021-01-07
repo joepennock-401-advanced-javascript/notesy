@@ -11,50 +11,44 @@ TODOs:
 2. Make ssure that the Note class is successfuly using the notes-collection interface to run the operations through.
 */
 
-jest.mock('minimist');
-const minimist = require('minimist');
+// jest.mock('minimist');
+// const minimist = require('minimist');
 /** Used for testing  */
 require('@code-fellows/supergoose');
 
-minimist.mockImplementation( () => {
-  return {
-    _: [],
-    a: 'test',
-  };
-});
+// minimist.mockImplementation( () => {
+//   return {
+//     _: [],
+//     a: 'pizza',
+//   };
+// });
+
+//primarily only testing switch statement of Notes
+//mock out notes-collection data/functionality
 
 const Note = require('../lib/notes');
+const Crud = require('../lib/model/notes-collection');
+jest.mock('../lib/model/notes-collection');
 
 jest.spyOn(global.console, 'log');
 
+//Crud mock data {}
+
 describe('Test suite for Note module from lib/notes.js.', () => {
 
-  it('Proof of life test', () => {
-    const test = 'test';
-    expect(test).toEqual('test');
+  let crud = new Crud();
+
+  it('Can successfully return a new instance of the Note class', () => {
+
+    let mockInput = {
+      action: 'a',
+      payload: 'test payload',
+      categoryAction: 'c',
+      category: 'general',
+    };
+
+    let note = new Note(mockInput);
+    expect(note instanceof Note).toBe(true);
   });
-
-  // it('Verify input is successfully being recieved from lib/notes.js module.', () => {
-  //   const options = new Note();
-  //   expect(options.action).toEqual('a');
-  // });
-
-  // it('Checks to make sure that a new instance of a note can be created', () => {
-  //   const note = new Note();
-  //   expect( note instanceof Note).toBe(true);
-  // });
-
-  // it('Ensure console.log() is not being called with invalid user input', () => {
-  //   const options = new Note();
-  //   options.action = null;
-  //   options.addNote();
-  //   expect(console.log).not.toHaveBeenCalled();
-  // });
-  
-  // it('Check to see if console.log() is being called.', () => {
-  //   const options = new Note();
-  //   options.addNote();
-  //   expect(console.log).toHaveBeenCalled();
-  // });
 
 });
