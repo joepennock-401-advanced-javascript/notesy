@@ -6,9 +6,12 @@
   "directories": {
     "lib": "lib"
   },
+  "bin": {
+    "notes": "index.js"
+  },
   "scripts": {
     "test": "jest --verbose --coverage",
-    "watch": "jest --verbose --coverage"
+    "watch": "jest --watchAll --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,7 @@
   },
   "homepage": "https://github.com/joepennock-401-advanced-javascript/notesy#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
     "jest": "^26.4.0",
     "minimist": "^1.2.5",
     "mongoose": "^5.10.0",
