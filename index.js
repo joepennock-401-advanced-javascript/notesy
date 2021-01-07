@@ -38,5 +38,6 @@ if ( input.validate() ) {
   mongoose.disconnect();
 };
 
-console.log('test input', input);
-console.log(new Note(input));
+// these will show the user input if desired for testing
+// console.log('test input', input);
+// console.log(new Note(input));
